@@ -127,7 +127,8 @@ def generate_mock_data(output_path):
     print(f"Shape: {df.shape}")
 
 if __name__ == "__main__":
-    output_path = "../data/raw/international_debt.csv"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    output_path = os.path.join(script_dir, "../data/raw/international_debt.csv")
     if not os.path.exists(output_path):
         generate_mock_data(output_path)
     else:

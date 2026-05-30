@@ -132,4 +132,4 @@ if __name__ == "__main__":
     if not os.path.exists(output_path):
         generate_mock_data(output_path)
     else:
-        print(f"File already exists at {output_path}")
+      print(f"File already exists at {output_path}")
